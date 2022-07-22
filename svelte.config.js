@@ -1,6 +1,8 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
+const dev = process.env.NODE_ENV === 'development';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
@@ -13,7 +15,7 @@ const config = {
     }),
   },
   paths: {
-    base: dev ? '' : '/portfolio-test-deploy',
+    base: dev ? '' : '/SPA-build-not-adding-repo-name',
   },
   preprocess: preprocess(),
 };

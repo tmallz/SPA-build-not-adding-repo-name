@@ -18,6 +18,7 @@
   "type": "module",
   "dependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.38",
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "svelte-preprocess": "^4.10.7"
   }
 }
